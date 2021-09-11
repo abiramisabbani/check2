@@ -74,8 +74,8 @@ class Patterns:
     print(mainNumber)
     
     
-    phoneNumRegex2 = re.compile(r'(\d{3})-(\d{3}-\d{4})-(\d{5})-(\d{6})')
-    mo2 = phoneNumRegex2.search('My number is 415-555-4242-12345-987600.')
+    phoneNumRegex2 = re.compile(r'(\d{3})-(\d{3}-\d{4})-(\d{5})-(\d{6})-(\d{7})')
+    mo2 = phoneNumRegex2.search('My number is 415-555-4242-12345-987600-0000123.')
     mo2.group(1)
     print(mo2.group(1))
     mo2.group(2)
@@ -84,6 +84,9 @@ class Patterns:
     print(mo2.group(3))
     mo2.group(4)
     print(mo2.group(4))
+    mo2.group(5)
+    print(mo2.group(5))
+    
 
     
     
